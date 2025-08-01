@@ -12,4 +12,8 @@ contract Counter {
         require(count > 0, "underflow");
         count--;
     }
+
+    function getCount() public view returns(uint256) {
+        return count;
+    }
 }
